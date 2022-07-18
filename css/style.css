@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans";
+  background-color: hsl(27, 66%, 92%);
+}
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+}
+
+/* HEADER SECTION */
+.header {
+  padding: 1rem 2rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.header__balance {
+  font-weight: 400;
+  color: hsl(27, 66%, 92%);
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.header__amount {
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* MAIN COMPONENT */
+
+.component {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: hsl(33, 100%, 98%);
+}
+
+.component__header {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.component__container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 2rem;
+}
+.component__element-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.component__element {
+  border-radius: 10px;
+  width: 100%;
+  height: 6rem;
+  background-color: hsl(10, 79%, 65%);
+}
+.component__element:active,
+.component__element:hover {
+  background-color: hsl(10, 77%, 70%);
+}
+.component__day {
+  color: #555;
+  text-align: center;
+}
+.component__active {
+  background-color: hsl(186, 34%, 60%);
+}
+.component__active:hover,
+.component__active:active {
+  background-color: hsl(186, 34%, 60%);
+}
+/* Component Days */
+
+.component__element[data-day~="mon"] {
+  height: 3rem;
+}
+.component__element[data-day~="tue"] {
+  height: 5rem;
+}
+
+.component__element[data-day~="wed"] {
+  height: 12rem;
+}
+
+.component__element[data-day~="thu"] {
+  height: 5rem;
+}
+
+.component__element[data-day~="fri"] {
+  height: 7rem;
+}
+
+.component__element[data-day~="sat"] {
+  height: 2rem;
+}
+
+.component__element[data-day~="sun"] {
+  height: 9rem;
+}
+
+/* Bank Section */
+.bank__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.bank__container {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bank__total {
+  font-size: 2.4rem;
+}
+.bank__header {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 400;
+}
+.bank__container-right {
+  align-self: flex-end;
+}
+.bank__percentage {
+  align-self: flex-end;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 700;
+}
+.bank__date {
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+  color: #555;
+}

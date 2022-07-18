@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <!-- 
+  My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month
+   -->
+    <div class="container">
+      <div class="header">
+        <div class="header__information">
+          <p class="header__balance">My balance</p>
+          <p class="header__amount">$921.48</p>
+        </div>
+        <img src="./images/logo.svg" class="header__icon" />
+      </div>
+      <div class="component">
+        <div class="component__header">Spending - Last 7 days</div>
+        <div class="component__container">
+          <div class="component__element-container">
+            <div class="component__element" data-day="mon"></div>
+            <div class="component__day">mon</div>
+          </div>
+          <div class="component__element-container">
+            <div class="component__element" data-day="tue"></div>
+            <div class="component__day">tue</div>
+          </div>
+          <div class="component__element-container">
+            <div
+              class="component__element component__active"
+              data-day="wed"
+            ></div>
+            <div class="component__day">wed</div>
+          </div>
+          <div class="component__element-container">
+            <div class="component__element" data-day="thu"></div>
+            <div class="component__day">thu</div>
+          </div>
+          <div class="component__element-container">
+            <div class="component__element" data-day="fri"></div>
+            <div class="component__day">fri</div>
+          </div>
+          <div class="component__element-container">
+            <div class="component__element" data-day="sat"></div>
+            <div class="component__day">sat</div>
+          </div>
+          <div class="component__element-container">
+            <div class="component__element" data-day="sun"></div>
+            <div class="component__day">sun</div>
+          </div>
+        </div>
+        <div class="bank__section">
+          <div class="bank__container">
+            <p class="bank__header">Total this month</p>
+            <h2 class="bank__total">$478.33</h2>
+          </div>
+          <div class="bank__container bank__container-right">
+            <p class="bank__percentage">+2.4%</p>
+            <p class="bank__date">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
